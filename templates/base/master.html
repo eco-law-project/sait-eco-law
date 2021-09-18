@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsPortal - {% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css') }}">
+</head>
+<body>
+    <header>
+        <h1>економико правовой лицей</h1>
+    </header>
+    <hr>
+    <nav>
+        <div class="row">
+            <div class="col-md-7 left">        |
+                <a href="/">Главная</a>
+                |
+                <a href="/teachers">Состав учителей</a>
+                |
+                <a href="/about">Про лицей</a>
+                |
+                <a href="/contact">Контакты</a>
+                |
+            </div>
+            <div class="col-md-5 right">
+                <a href="" style="margin-right: 30px">
+                </a>
+                |
+                    <a href="/child">Для учеников</a>
+                    |
+                    <a href="/parent">Для родителей</a>
+                |
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <h6>Страница еконмико правового лицея,Деснянского района(с 8 по 11 класс)</h6>
+    </footer>
+</body>
+</html>

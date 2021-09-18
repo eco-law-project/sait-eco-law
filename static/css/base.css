@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    padding: 5px 5%;
+    background-image:url('../img/eco.jpg');
+    background-size: 100%;
+    color: indigo;
+    font: 12pt 'Trebuchet MS';
+}
+
+header>h1 {
+    text-shadow: 2px 2px blue;
+}
+
+nav {
+    padding: 5px;
+}
+
+nav a {
+    color: navy blue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+ header {
+    padding-top: 50px;
+ }
+
+ .info-box{
+    color: navy;
+    background-color: whitesmoke;
+    padding: 20px;
+ }
